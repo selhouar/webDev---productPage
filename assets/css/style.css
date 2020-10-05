@@ -1,0 +1,46 @@
+body {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.logo {
+  width: 80%;
+  margin-top: 30px;
+}
+
+.hamburger-menu {
+  grid-column: 5 / span 1;
+  width: 65%;
+  margin-top: 30px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.product-image {
+  /* place-self: center; */
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+}
+.product-image img {
+  margin-top: 5em;
+  margin-left: 2em;
+  width: 100%;
+}
+
+.description {
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 2;
+  margin-top: 10em;
+  margin-left: 5em;
+}
